@@ -146,8 +146,10 @@ class Initializer(object):
      lambda incoming connections for Excitatory neurons and outgoing connections per Inhibitory neuron"""
 
     @staticmethod
-    def generate_lambd_connections(synaptic_connection, ne, ni, lambd_w, lambd_std):
-
+    
+    def generate_lambd_connections(synaptic_connection,ne,ni, lambd_w,lambd_std):
+        
+        
         """
         Args:
         synaptic_connection -  Type of sysnpatic connection (EE,EI or IE)
@@ -155,118 +157,117 @@ class Initializer(object):
         ni - Number of inhibitory units
         lambd_w - Average number of incoming connections
         lambd_std - Standard deviation of average number of connections per neuron
-
+        
         Returns:
-
+        
         connection_weights - Weight matrix
-
+        
         """
-
+        
+        
         if synaptic_connection == 'EE':
-
+            
+            
             """Choose random lamda connections per neuron"""
 
-            # Draw normally distributed ne integers with mean lambd_w
+            # Draw normally distribued ne integers with mean lambd_w
 
             lambdas_incoming = norm.ppf(np.random.random(ne), loc=lambd_w, scale=lambd_std).astype(int)
-
+            
             # lambdas_outgoing = norm.ppf(np.random.random(ne), loc=lambd_w, scale=lambd_std).astype(int)
+        
+            # List of neurons 
 
-            # List of neurons
-
-            list_neurons = list(range(ne))
+            list_neurons= list(range(ne))
 
             # Connection weights
 
-            connection_weights = np.zeros((ne, ne))
+            connection_weights = np.zeros((ne,ne))
 
             # For each lambd value in the above list,
             # generate weights for incoming and outgoing connections
-
-            # -------------Gaussian Distribution of weights --------------
-
+                
+            #-------------Gaussian Distribution of weights --------------
+                
             # weight_matrix = np.random.randn(Sorn.ne, Sorn.ni) + 2 # Small random values from gaussian distribution
-            # Centered around 2 to make all values positive
-
+                                                                    # Centered around 2 to make all values positive 
+                
             # ------------Uniform Distribution --------------------------
-            global_incoming_weights = np.random.uniform(0.0, 0.1, sum(lambdas_incoming))
-
+            global_incoming_weights = np.random.uniform(0.0,0.1,sum(lambdas_incoming))
+            
             # Index Counter
             global_incoming_weights_idx = 0
-
+            
             # Choose the neurons in order [0 to 199]
-
+            
             for neuron in list_neurons:
 
-                # Choose ramdom unique (lambdas[neuron]) neurons from  list_neurons
+                ### Choose ramdom unique (lambdas[neuron]) neurons from  list_neurons
                 possible_connections = list_neurons.copy()
-
+                
                 possible_connections.remove(neuron)  # Remove the selected neuron from possible connections i!=j
-
+                
                 # Choose random presynaptic neurons
-                possible_incoming_connections = random.sample(possible_connections, lambdas_incoming[neuron])
+                possible_incoming_connections = random.sample(possible_connections,lambdas_incoming[neuron])  
 
-                incoming_weights_neuron = global_incoming_weights[
-                                          global_incoming_weights_idx:global_incoming_weights_idx + lambdas_incoming[
-                                              neuron]]
-
+            
+                incoming_weights_neuron = global_incoming_weights[global_incoming_weights_idx:global_incoming_weights_idx+lambdas_incoming[neuron]]
+                
                 # ---------- Update the connection weight matrix ------------
 
                 # Update incoming connection weights for selected 'neuron'
 
-                for incoming_idx, incoming_weight in enumerate(incoming_weights_neuron):
+                for incoming_idx,incoming_weight in enumerate(incoming_weights_neuron):  
                     connection_weights[possible_incoming_connections[incoming_idx]][neuron] = incoming_weight
-
+                
                 global_incoming_weights_idx += lambdas_incoming[neuron]
-
+            
             return connection_weights
-
+        
         if synaptic_connection == 'EI':
-
+            
             """Choose random lamda connections per neuron"""
 
-            # Draw normally distributed ni integers with mean lambd_w
+            # Draw normally distribued ni integers with mean lambd_w
             lambdas = norm.ppf(np.random.random(ni), loc=lambd_w, scale=lambd_std).astype(int)
+            
+            # List of neurons 
 
-            # List of neurons
-
-            list_neurons = list(range(ni))  # Each i can connect with random ne neurons
+            list_neurons= list(range(ni))  # Each i can connect with random ne neurons 
 
             # Initializing connection weights variable
 
-            connection_weights = np.zeros((ni, ne))
+            connection_weights = np.zeros((ni,ne))
 
             # ------------Uniform Distribution -----------------------------
-            global_outgoing_weights = np.random.uniform(0.0, 0.1, sum(lambdas))
-
+            global_outgoing_weights = np.random.uniform(0.0,0.1,sum(lambdas))
+            
             # Index Counter
             global_outgoing_weights_idx = 0
-
+            
             # Choose the neurons in order [0 to 40]
 
             for neuron in list_neurons:
 
-                # Choose random unique (lambdas[neuron]) neurons from  list_neurons
+                ### Choose ramdom unique (lambdas[neuron]) neurons from  list_neurons
                 possible_connections = list(range(ne))
-
-                possible_outgoing_connections = random.sample(possible_connections, lambdas[
-                    neuron])  # possible_outgoing connections to the neuron
+                
+                possible_outgoing_connections = random.sample(possible_connections,lambdas[neuron])  # possible_outgoing connections to the neuron
 
                 # Update weights
-                outgoing_weights = global_outgoing_weights[
-                                   global_outgoing_weights_idx:global_outgoing_weights_idx + lambdas[neuron]]
+                outgoing_weights = global_outgoing_weights[global_outgoing_weights_idx:global_outgoing_weights_idx+lambdas[neuron]]
 
                 # ---------- Update the connection weight matrix ------------
 
                 # Update outgoing connections for the neuron
 
-                for outgoing_idx, outgoing_weight in enumerate(
-                        outgoing_weights):  # Update the columns in the connection matrix
+                for outgoing_idx,outgoing_weight in enumerate(outgoing_weights):  # Update the columns in the connection matrix
                     connection_weights[neuron][possible_outgoing_connections[outgoing_idx]] = outgoing_weight
-
+                
                 # Update the global weight values index
                 global_outgoing_weights_idx += lambdas[neuron]
-
+                
+            
             return connection_weights
 
     """ More Util functions"""
