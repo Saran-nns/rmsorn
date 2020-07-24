@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: rmsorn
-Version: 0.0.7
+Version: 0.0.8
 Summary: Reward Modulated Self-Organizing Recurrent Neural Networks
 Home-page: https://github.com/Saran-nns/rm_sorn
 Author: Saranraj Nambusubramaniyan
@@ -54,7 +54,7 @@ Description: ## Reward Modulated Self-Organizing Recurrent Neural Networks
                                                                                               matrices = None,
                                                                                               inputs = np.asarray(inputs),sequence_length = 4, targets = targets,
                                                                                               reward_window_sizes = [1,5,10,20],
-                                                                                              epochs = 1).train_sorn()
+                                                                                              epochs = 1).train_rmsorn()
         ```
 Keywords: Brain-Inspired Computing,Artificial Neural Networks,Neuro Informatics,Spiking Cortical Networks,Reinformcement Learning,Neural Connectomics,Neuroscience,Artificial General Intelligence,Neural Information Processing
 Platform: UNKNOWN

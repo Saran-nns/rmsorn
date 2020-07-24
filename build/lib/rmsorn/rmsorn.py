@@ -541,7 +541,7 @@ class SimulateRMSorn(RMSorn):
         self.reward_window_sizes = reward_window_sizes
         self.sequence_length = sequence_length
         
-    def train_sorn(self):  
+    def train_rmsorn(self):  
         # Collect the network activity at all time steps
         X_all = [0]*self.time_steps
         Y_all = [0]*self.time_steps

@@ -46,5 +46,5 @@ train_plast_inp_mat,X_all_inp,Y_all_inp,R_all, frac_pos_active_conn = SimulateRM
                                                                                       matrices = None,
                                                                                       inputs = np.asarray(inputs),sequence_length = 4, targets = targets,
                                                                                       reward_window_sizes = [1,5,10,20],
-                                                                                      epochs = 1).train_sorn()
+                                                                                      epochs = 1).train_rmsorn()
 ```
