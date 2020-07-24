@@ -1,7 +1,7 @@
 ## Reward Modulated Self-Organizing Recurrent Neural Networks 
 
+Implementation and PyPi package of RM-SORN: a reward-modulated self-organizing recurrent neural network: https://doi.org/10.3389/fncom.2015.00036
 RMSORN is a subclass of neuro-inspired artificial network, Self Organizing Recurrent Neural Networks. With reward driven self-organization, this network achieves performance comparable to networks trained with supervised learning algorithms.
-
 
 [![Build Status](https://travis-ci.org/Saran-nns/rmsorn.svg?branch=master)](https://travis-ci.org/Saran-nns/rmsorn)
 [![codecov](https://codecov.io/gh/Saran-nns/rmsorn/branch/master/graph/badge.svg)](https://codecov.io/gh/Saran-nns/rmsorn)
