@@ -1,6 +1,6 @@
 ## Reward Modulated Self-Organizing Recurrent Neural Networks 
 
-RMSORN is a subclass of neuro-inspired artificial network, Self Organizing Recurrent Neural Networks. With reward driven self-organization, this network achieves performance comparable with networks trained with supervised learning algorithms.
+RMSORN is a subclass of neuro-inspired artificial network, Self Organizing Recurrent Neural Networks. With reward driven self-organization, this network achieves performance comparable to networks trained with supervised learning algorithms.
 
 
 [![Build Status](https://travis-ci.org/Saran-nns/rmsorn.svg?branch=master)](https://travis-ci.org/Saran-nns/rmsorn)
