@@ -6,7 +6,7 @@ RMSORN is a subclass of neuro-inspired artificial network, Self Organizing Recur
 [![Build Status](https://travis-ci.org/Saran-nns/rmsorn.svg?branch=master)](https://travis-ci.org/Saran-nns/rmsorn)
 [![codecov](https://codecov.io/gh/Saran-nns/rmsorn/branch/master/graph/badge.svg)](https://codecov.io/gh/Saran-nns/rmsorn)
 [![PyPI version](https://badge.fury.io/py/rmsorn.svg)](https://badge.fury.io/py/rmsorn)
-![PyPI - Downloads](https://img.shields.io/pypi/dw/rmsorn.svg)
+![PyPI - Downloads](https://img.shields.io/github/downloads/saran-nns/rmsorn/total)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://img.shields.io/github/license/Saran-nns/rmsorn)
 
 #### To install the latest release:
