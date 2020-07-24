@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: rmsorn
+Version: 0.0.3
+Summary: Reward Modulated Self-Organizing Recurrent Neural Networks
+Home-page: https://github.com/Saran-nns/rm_sorn
+Author: Saranraj Nambusubramaniyan
+Author-email: saran_nns@hotmail.com
+License: OSI Approved :: MIT License
+Description: ## Reward Modulated Self-Organizing Recurrent Neural Networks 
+        
+        RMSORN is a subclass of neuro-inspired artificial network, Self Organizing Recurrent Neural Networks. With reward driven self-organization, this network achieves performance with networks trained with supervised learning algorithms.
+        
+        
+        
+        
+        
+        
+        
+Keywords: Brain-Inspired Computing,Artificial Neural Networks,Neuro Informatics,Spiking Cortical Networks,Reinformcement Learning,Neural Connectomics,Neuroscience,Artificial General Intelligence,Neural Information Processing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
