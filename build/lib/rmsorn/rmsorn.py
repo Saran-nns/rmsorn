@@ -4,7 +4,7 @@ from __future__ import division
 import numpy as np
 import os
 # from sorn.utils import Helper
-from utils import Helper, Initializer
+from rmsorn.utils import Initializer
 from configparser import ConfigParser
 import random
 import tqdm

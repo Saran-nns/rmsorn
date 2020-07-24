@@ -1,7 +1,7 @@
 import numpy as np 
 from rmsorn import *
 
-class PatternRecognitionTask(object):
+class PatternRecognition(object):
     """1234, 4321, 4213, 2431 and has to recognize the word 1234"""
     
     def __init__(self):
@@ -15,7 +15,7 @@ class PatternRecognitionTask(object):
 
         self.sequence_targets = np.repeat(np.array([1,0,0,0]),repeats=1000,axis=0)
 
-    def get_sequence_targets():
+    def generate_sequence():
          
         input_str = ['1234','4321', '4213', '2431']
         training_input = []
