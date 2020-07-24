@@ -3,11 +3,11 @@
 RMSORN is a subclass of neuro-inspired artificial network, Self Organizing Recurrent Neural Networks. With reward driven self-organization, this network achieves performance with networks trained with supervised learning algorithms.
 
 
-[![Build Status](https://travis-ci.org/Saran-nns/RM-SORN.svg?branch=master)](https://travis-ci.org/Saran-nns/RM-SORN)
-[![codecov](https://codecov.io/gh/Saran-nns/RM-SORN/branch/master/graph/badge.svg)](https://codecov.io/gh/Saran-nns/RM-SORN)
+[![Build Status](https://travis-ci.org/Saran-nns/rmsorn.svg?branch=master)](https://travis-ci.org/Saran-nns/rmsorn)
+[![codecov](https://codecov.io/gh/Saran-nns/rmsorn/branch/master/graph/badge.svg)](https://codecov.io/gh/Saran-nns/rmsorn)
 [![PyPI version](https://badge.fury.io/py/rmsorn.svg)](https://badge.fury.io/py/rmsorn)
 ![PyPI - Downloads](https://img.shields.io/pypi/dw/rmsorn.svg)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://img.shields.io/github/license/Saran-nns/RM-SORN)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://img.shields.io/github/license/Saran-nns/rmsorn)
 
 #### To install the latest release:
 
@@ -18,7 +18,7 @@ pip install rmsorn
 The library is still in alpha stage, so you may also want to install the latest version from the development branch:
 
 ```python
-pip install git+https://github.com/Saran-nns/RM-SORN
+pip install git+https://github.com/Saran-nns/rmsorn
 ```
 #### Usage:
 ##### Update Network configurations
