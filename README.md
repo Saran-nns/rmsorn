@@ -48,4 +48,5 @@ train_plast_inp_mat,X_all_inp,Y_all_inp,R_all, frac_pos_active_conn = SimulateRM
                                                                                       epochs = 1).train_rmsorn()
 ```
 
-Notebook is avaialble at https://github.com/Saran-nns/PySORN_0.1/blob/master/v0.1.0/notebooks/alpha_cpu/RMSORN_pattern_recognition.ipynb
+Notebook is avaialble at 
+https://github.com/Saran-nns/PySORN_0.1/blob/master/v0.1.0/notebooks/alpha_cpu/RMSORN_pattern_recognition.ipynb
