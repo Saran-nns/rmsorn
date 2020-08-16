@@ -5,7 +5,6 @@ PyPi package of RM-SORN: a reward-modulated self-organizing recurrent neural net
 [![Build Status](https://travis-ci.org/Saran-nns/rmsorn.svg?branch=master)](https://travis-ci.org/Saran-nns/rmsorn)
 [![codecov](https://codecov.io/gh/Saran-nns/rmsorn/branch/master/graph/badge.svg)](https://codecov.io/gh/Saran-nns/rmsorn)
 [![PyPI version](https://badge.fury.io/py/rmsorn.svg)](https://badge.fury.io/py/rmsorn)
-![PyPI - Downloads](https://img.shields.io/github/downloads/saran-nns/rmsorn/total)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://img.shields.io/github/license/Saran-nns/rmsorn)
 
 #### To install the latest release:
@@ -48,5 +47,6 @@ train_plast_inp_mat,X_all_inp,Y_all_inp,R_all, frac_pos_active_conn = SimulateRM
                                                                                       epochs = 1).train_rmsorn()
 ```
 
-Notebook is avaialble at 
+Notebook is avaialble at
+
 https://github.com/Saran-nns/PySORN_0.1/blob/master/v0.1.0/notebooks/alpha_cpu/RMSORN_pattern_recognition.ipynb
