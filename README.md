@@ -1,6 +1,6 @@
 ## Reward Modulated Self-Organizing Recurrent Neural Networks 
 
-PyPi package of RM-SORN: a reward-modulated self-organizing recurrent neural network: (RMSORN-Paper)(https://doi.org/10.3389/fncom.2015.00036)
+PyPi package of RM-SORN: a reward-modulated self-organizing recurrent neural network: [RMSORN-Paper](https://doi.org/10.3389/fncom.2015.00036)
 
 [![Build Status](https://travis-ci.org/Saran-nns/rmsorn.svg?branch=master)](https://travis-ci.org/Saran-nns/rmsorn)
 [![codecov](https://codecov.io/gh/Saran-nns/rmsorn/branch/master/graph/badge.svg)](https://codecov.io/gh/Saran-nns/rmsorn)
